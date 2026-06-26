@@ -29,7 +29,7 @@ ORDER BY average_salary DESC;
 SELECT
     department,
     city,
-    COUNT(*) AS headcount
+    COUNT(employee_id) AS headcount
 FROM employees
 GROUP BY department, city
 ORDER BY department, city;
