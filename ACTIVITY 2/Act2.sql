@@ -5,7 +5,7 @@ SELECT
 FROM employees
 GROUP BY department
 ORDER BY headcount DESC;
---Results: 5 Rows
+--Results: 9 Rows
 
 -- 2. Total salary per city, sorted descending.
 SELECT
