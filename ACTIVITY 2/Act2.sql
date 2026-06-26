@@ -38,8 +38,7 @@ ORDER BY department, city;
 -- 5. Headcount per hire year.
 SELECT
     SUBSTR(hire_date, 1, 4) AS hire_year,
-    COUNT(*) AS headcount
+    COUNT(employee_id) AS headcount
 FROM employees
-GROUP BY hire_year
-ORDER BY hire_year;
+GROUP BY SUBSTR(hire_date, 1, 4)
 --Results: 9 Rows
